@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section id="bg" class="min-vh-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <form action="/" method="POST">
+            <div class="mb-3">
+              <label class="form-label">Account Name</label>
+              <input type="text" class="form-control" name="AccountName">
+              <div id="emailHelp" class="form-text">Please register first if you don't have an account.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+      
+{% endblock content %}
+
